@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+  <link rel="manifest" href="/site.webmanifest">
+  <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+  <meta name="msapplication-TileColor" content="#da532c">
+  <meta name="theme-color" content="#ffffff">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sdrive.app</title>
+  <link href="/walletstyle.css" rel="stylesheet" />
+
+  <meta name="twitter:title" content="Sdrive.app" />
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:site" content="@sdriveapp" />
+  <meta name="twitter:creator" content="@svenasol" />
+
+  <meta name="twitter:description" content="" />
+  <meta name="twitter:site" content="" />
+  <meta name="twitter:creator" content="" />
+  <meta name="twitter:image:src" content="" />
+  <meta name="twitter:image:alt" content="" />
+
+  <meta name="og:title" content="Sdrive.app" />
+  <meta name="og:description" content="Search The Shadows" />
+  <meta name="og:url" content="" />
+  <meta name="og:site_name" content="Sdrive.app" />
+  <meta name="og:locale" content="en_US" />
+  <meta name="og:type" content="website" />
+  <meta name="og:image" content="" />
+  <meta property="og:url" content="https://sdrive.app/" />
+
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Alumni+Sans+Pinstripe:wght@500&family=Source+Code+Pro&family=Dosis&family=Raleway:wght@300;600&display=swap');
+
+    @font-face {
+      font-family: 'Blade Runner';
+      src: url('/brfont.woff2') format('woff2'),
+        url('/brfont.woff') format('woff');
+      font-weight: normal;
+      font-style: normal;
+      font-display: swap;
+    }
+
+    body {
+      font-family: 'Dosis', sans-serif;
+    }
+
+    h2,
+    h3,
+    h4,
+    p {
+      font-family: 'Raleway', sans-serif;
+      font-weight: 600;
+    }
+
+    .hex {
+      clip-path: polygon(50% 0, 100% 25%, 100% 75%, 50% 100%, 0 75%, 0 25%);
+    }
+
+    h1 {
+      font-family: 'Dosis', sans-serif;
+    }
+
+    pre {
+      display: inline-block;
+      font-weight: bold;
+      white-space: pre;
+      word-break: break-all;
+      font-family: 'Source Code Pro', monospace;
+    }
+  </style>
+</head>
+
+<body class="text-slate-900 dark:bg-black dark:text-slate-400">
+  <div id="root" class=""></div>
+  <div class="">
+    <div id="modal" class=""></div>
+  </div>
+  <script>
+    window.global = window;
+  </script>
+  <script type="module">
+    import EventEmitter from "events";
+    import { Buffer } from "buffer";
+    window.Buffer = Buffer;
+    window.EventEmitter = EventEmitter;
+  </script>
+  <script type="module" src="/src/main.tsx"></script>
+
+</body>
+
+</html>
