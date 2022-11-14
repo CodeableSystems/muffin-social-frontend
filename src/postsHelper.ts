@@ -1,4 +1,3 @@
-import { defaultStats, IChartStats, IPriceStats, IStats, Vids } from "./pages/Dashboard"
 import { ShadowDriveVersion } from "@shadow-drive/sdk"
 import { Keypair, PublicKey } from "@solana/web3.js"
 import axios, { Axios, AxiosResponseHeaders } from "axios"

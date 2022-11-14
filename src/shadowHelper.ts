@@ -54,9 +54,6 @@ export interface TransformedHeaders {
   size: number
 }
 
-export interface IFileList {
-  files: IFile[]
-}
 export interface IFileKeys {
   keys: string[]
 }

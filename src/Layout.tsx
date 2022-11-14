@@ -1,6 +1,4 @@
 import { Wallet } from "./Wallet"
-import { IStats } from "./pages/Dashboard"
-import { sdriveStats } from "./shadowHelper"
 import React, { useEffect, useState } from "react"
 import { Toaster } from "react-hot-toast"
 import { Link } from "react-router-dom"
