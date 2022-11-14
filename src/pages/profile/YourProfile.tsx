@@ -66,7 +66,7 @@ export default function YourProfile() {
         setChecked(true)
         const posts = await getPostsByAuthor(anchorWallet.publicKey.toBase58())
         if (posts.status == 200) setPosts(posts.result)
-        const tokens = await getTokenAccounts("CTEvwfdAvU2XXchiqwQXeNVCsFpJhS24ZFBNdV2r1sd8", connection)
+        const tokens = await getTokenAccounts(anchorWallet.publicKey.toBase58(), connection)
         setTokens(tokens)
       }
     })()
