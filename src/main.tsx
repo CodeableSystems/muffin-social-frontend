@@ -20,7 +20,7 @@ import { Link } from "react-router-dom"
 const Wallet: FC = ({ children }) => {
   // The network can be set to 'devnet', 'testnet', or 'mainnet-beta'.
   const network = WalletAdapterNetwork.Mainnet
-  console.log(import.meta.env.VITE_RPC)
+
   const endpoint = useMemo(() => "https://api.devnet.solana.com", [network])
 
   const wallets = useMemo(

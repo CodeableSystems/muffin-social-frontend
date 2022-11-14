@@ -16,7 +16,7 @@ export function getAnchorEnvironment(wallet: AnchorWallet, connection: Connectio
 }
 
 export async function getTokenAccounts(wallet: string, solanaConnection: Connection) {
-  const rpcEndpoint = "https://chaotic-green-spree.solana-mainnet.discover.quiknode.pro/"
+  const rpcEndpoint = (import.meta.env.VITE_RPC)
   const connection = new Connection(rpcEndpoint)
 
   const filters: GetProgramAccountsFilter[] = [
