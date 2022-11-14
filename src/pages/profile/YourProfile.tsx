@@ -1,6 +1,5 @@
 import { getAnchorEnvironment, getTokenAccounts } from "../../components/core"
 import { ProfileIcon, UploadIcon } from "../../components/icons"
-import { Post, Profile } from "../../components/shadowsdk/types"
 import idl from "../../idls/identity.json"
 import { getPostsByAuthor, getPfp } from "../../postsHelper"
 import { performReverseLookup } from "@bonfida/spl-name-service"
@@ -24,6 +23,9 @@ const selectFile = (contentType: string, multiple: boolean): Promise<File[]> => 
     input.click()
   })
 }
+
+type Profile = any;
+type Post = any;
 
 export default function YourProfile() {
   const { connection } = useConnection()
